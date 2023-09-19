@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu_part{
+    background-color: skyblue;
+}
+
+.alignment{
+    width: 80%;
+    /* background: yellow ; */
+    margin: auto;
+}  
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    display: block; 
+    padding: 15px 10px; 
+}
+.menu li a:hover{
+    background: red ;
+}
+.drop_menu{
+    display: none;
+}
+.menu li:hover .drop_menu{
+    display: block;
+    position: absolute; 
+    background-color: green;
+    width: 130%;
+    text-align: center;
+}
+.menu li{
+    position: relative;
+}
+.sub_drop{
+    display: none;
+}
+.drop_menu li:hover .sub_drop{
+    display: block;
+    position: absolute;
+    background: #000;
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
+.drop_menu li{
+    position: relative;
+}
+.s_drop{
+    display: none;
+}
+.sub_drop li:hover .s_drop{
+    display: block;
+    position: absolute;
+    background-color: slateblue;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    
+}
+
+.ss_drop{
+    display: none;
+}
+.sub_drop li:hover .ss_drop{
+    display: block;
+    position: absolute;
+    background-color: fuchsia;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    
+}
+
+.d_menu{
+    display: none;
+}
+
+.drop_menu li:hover .d_menu{
+    display: block;
+    position: absolute;
+    background: #000;
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
